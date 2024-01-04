@@ -428,8 +428,8 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    -webkit-mask: linear-gradient(#000 0 0),
-    linear-gradient(#000 0 0);
+    -webkit-mask: linear-gradient(#023605 0 0),
+    linear-gradient(#023605 0 0);
     -webkit-mask-clip: text, padding-box;
     -webkit-mask-composite: xor;
     padding-right: 20px;
