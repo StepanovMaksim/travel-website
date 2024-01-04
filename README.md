@@ -1,1 +1,1 @@
-Открыть сайт: https://stepanovmaksim.github.io/-travel-website/
+Открыть сайт: https://stepanovmaksim.github.io/travel-website/
