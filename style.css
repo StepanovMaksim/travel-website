@@ -16,7 +16,7 @@
     color: #007b62;
 }
 
-@media (min-aspect-ratio: 4/9) and (max-aspect-ratio: 6/9) {
+@media (min-aspect-ratio: 2/9) and (max-aspect-ratio: 6/9) {
 
     header {
         position: absolute;
@@ -28,6 +28,13 @@
         justify-content: flex-start;
         align-items: center;
         z-index: 100;
+    }
+
+    .parallax {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55vw;
     }
     
     .navigation1 a {
@@ -46,13 +53,6 @@
         margin-right: 20px;
     }
 
-    .parallax {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30vh;
-    }
     
     #text {
         position: absolute;
@@ -88,6 +88,13 @@
         z-index: 100;
     }
     
+    .parallax {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 55vw;
+    }
+
     .navigation1 a {
         text-decoration: none;
         color: black;
@@ -102,14 +109,6 @@
         color: green;
         pointer-events: none;
         margin-right: 20px;
-    }
-
-    .parallax {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35vh;
     }
     
     #text {
@@ -144,6 +143,13 @@
         align-items: center;
         z-index: 100;
     }
+
+    .parallax {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
     
     .navigation1 a {
         text-decoration: none;
@@ -161,13 +167,6 @@
         margin-right: 20px;
     }
     
-    .parallax {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 55vh;
-    }
     
     #text {
         position: absolute;
@@ -188,7 +187,8 @@
 
 }
 
-@media (min-aspect-ratio: 10/7) and (max-aspect-ratio: 10/6) {
+@media (min-aspect-ratio: 10/7) and (max-aspect-ratio: 10/4.5) {
+    
     header {
         position: absolute;
         top: 0;
@@ -199,6 +199,13 @@
         justify-content: flex-start;
         align-items: center;
         z-index: 100;
+    }
+
+    .parallax {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
     }
     
     .navigation1 a {
@@ -216,18 +223,8 @@
         pointer-events: none;
         margin-right: 20px;
     }
-    .header {
-        bottom: 70px;
-    }
 
-    .parallax {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80vh;
-        
-    }
+
 
     #text {
         position: absolute;
@@ -248,7 +245,19 @@
 }
 
 
-@media (min-aspect-ratio: 10/6) {
+@media (min-aspect-ratio: 10/4.5) {
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 100;
+    }
 
     .parallax {
         display: none;
@@ -272,10 +281,8 @@
 
 }
 
-body {
-    background: #f9f9f9;
-    min-height: 100vh;
-    overflow-x: hidden;
+.parallax {
+    position: relative;
 }
 
 .navigation1 a:hover,
@@ -289,6 +296,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     pointer-events: none;
 }
 
