@@ -17,7 +17,7 @@ nextBtn.onclick = () => {
         slideNumber = 0;
     }
     slides[slideNumber].classList.add('active');
-    console.log(slides[slideNumber].style.zIndex)
+
 }
 
 prevBtn.onclick = () => {
