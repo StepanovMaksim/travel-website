@@ -387,6 +387,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 100;
 }
 
 .slide img {
@@ -402,6 +403,16 @@
 .slide.active img {
     opacity: 1;
 }
+
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 99;
+}
+
 
 .slide .left-info {
     position: absolute;
@@ -463,7 +474,7 @@
     margin: 10px 0 15px;
 }
 
-.content .btn {
+.btn {
     display: inline-block;
     padding: 13px 28px;
     background: #fff;
@@ -477,7 +488,7 @@
     transition: .5s;
 }
 
-.content .btn:hover {
+.btn:hover {
     background: transparent;
     color: #fff;
 }

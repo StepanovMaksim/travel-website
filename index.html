@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body>
+<body style='overflow-x:hidden;'>
     
     
     <section class="parallax">
@@ -54,19 +54,19 @@
     <section class="banner">
         
         <div class="slider">
-            <div class="slide active">
+            <div class="slide">
                 <img src="bottom/china.jpg" alt="">
                 <div class="left-info">
                     <div class="penetrate-blur">
                         <h1>Ал</h1>
                     </div>
                     <div class="content">
-                        <h3>01. Леса алтая</h3>
+                        <h3>Леса алтая</h3>
                         
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing
                         elit.</p>
                             
-                        <a href="#" class="btn">Больше деталей</a>
+                        <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
                 </div>
                 <div class="right-info">
@@ -82,12 +82,12 @@
                         <h1>Сиб</h1>
                     </div>
                     <div class="content">
-                        <h3>02. Леса сибири</h3>
+                        <h3>Леса сибири</h3>
                         
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. </p>
                             
-                        <a href="#" class="btn">Больше деталей</a>
+                        <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
 
 
@@ -106,12 +106,12 @@
                         <h1>Каре</h1>
                     </div>
                     <div class="content">
-                        <h3>03. Леса карелии</h3>
+                        <h3>Леса карелии</h3>
                         
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. </p>
                             
-                        <a href="#" class="btn">Больше деталей</a>
+                        <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
 
 
@@ -130,12 +130,12 @@
                         <h1>Ура</h1>
                     </div>
                     <div class="content">
-                        <h3>04. Водопады краснодарского края</h3>
+                        <h3>Водопады краснодарского края</h3>
                         
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. </p>
                             
-                        <a href="#" class="btn">Больше деталей</a>
+                        <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
 
 
@@ -154,12 +154,12 @@
                         <h1>Тай</h1>
                     </div>
                     <div class="content">
-                        <h3>05. Водопады краснодарского края</h3>
+                        <h3>Водопады краснодарского края</h3>
                         
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing
                         elit. </p>
                             
-                        <a href="#" class="btn">Больше деталей</a>
+                        <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
 
 
@@ -170,6 +170,7 @@
                     <h3>Леса</h3>
                 </div>
             </div>
+            
 
         </div>
             <div class="navigation">
@@ -179,8 +180,9 @@
                 <span class="next-btn">
                     <i class='bx bx-chevron-right' ></i>
                 </span>
-
-                
+            </div>
+            <div class="video">
+                <video src="forestMp4.mp4" muted loop autoplay></video>
             </div>
     </section>
 
