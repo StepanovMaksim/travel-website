@@ -39,10 +39,7 @@ body::-webkit-scrollbar-track {
     }
 
     .parallax {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 55vw;
+        display: none;
     }
     
     .navigation1 a {
@@ -88,8 +85,17 @@ body::-webkit-scrollbar-track {
 
 @media (min-aspect-ratio: 6/9) and (max-aspect-ratio: 1) {
 
-     header {
-        display: none;
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 100;
+        
     }
     
     .parallax {
