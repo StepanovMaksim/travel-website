@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website using HTML CSS & Javascript</title>
+    <title>HTML CSS & Javascript</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -16,10 +16,10 @@
         <header>
         <h2 class="logo1">Logo</h2>
         <nav class="navigation1">
-            <a href="#" class="active">Домой</a>
-            <a href="#">Подробнее</a>
-            <a href="#">Сервисы</a>
-            <a href="#">Контакты</a>
+            <a href="#header" class="active">Домой</a>
+            <a href="#header">Подробнее</a>
+            <a href="#header">Сервисы</a>
+            <a href="#header">Контакты</a>
         </nav>
         
     </header>
@@ -42,29 +42,30 @@
     <script src="script.js"></script>
     
     
-    <div class="header">
+    <div class="header" id="header">
         <a href="#" class="logo">Туры</a>
         <div class="social-media">
-            <a href="#"><i class='bx bxl-vk'></i></a>
-            <a href="#"><i class='bx bxl-gmail' ></i></a>
-            <a href="#"><i class='bx bxl-telegram' ></i></a>
-            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="https://vk.com/"><i class='bx bxl-vk'></i></a>
+            <a href="https://www.google.com/intl/ru/gmail/about/"><i class='bx bxl-gmail' ></i></a>
+            <a href="https://web.telegram.org/"><i class='bx bxl-telegram' ></i></a>
+            <a href="https://www.whatsapp.com/?lang=ru_RU"><i class='bx bxl-whatsapp' ></i></a>
         </div>
     </div>
     <section class="banner">
         
         <div class="slider">
-            <div class="slide">
-                <img src="bottom/china.jpg" alt="">
+            <div class="slide active">
+                <img src="bottom/altai.jpg" alt="">
                 <div class="left-info">
                     <div class="penetrate-blur">
                         <h1>Ал</h1>
                     </div>
                     <div class="content">
-                        <h3>Леса алтая</h3>
+                        <h3>Леса Алтая</h3>
                         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit.</p>
+                        <p>Леса Алтая поражают красотой и многообразием, представляя собой уникальное природное сокровище, где можно встретить
+                        величественных кедров, пышных елей и лиственных деревьев, образующих живописный зеленый покров на горных склонах и
+                        долинах.</p>
                             
                         <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
@@ -76,16 +77,16 @@
             </div>
 
             <div class="slide">
-                <img src="bottom/brazil.jpg" alt="">
+                <img src="bottom/siberia.jpg" alt="">
                 <div class="left-info">
                     <div class="penetrate-blur">
                         <h1>Сиб</h1>
                     </div>
                     <div class="content">
-                        <h3>Леса сибири</h3>
+                        <h3>Леса Сибири</h3>
                         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. </p>
+                        <p>Леса Сибири занимают обширные территории, служа домом для разнообразной флоры и фауны, и играют ключевую роль в
+                        поддержании экологического баланса региона.</p>
                             
                         <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
@@ -100,16 +101,16 @@
             </div>
 
             <div class="slide">
-                <img src="bottom/serbia.jpg" alt="">
+                <img src="bottom/karelia.jpg" alt="">
                 <div class="left-info">
                     <div class="penetrate-blur">
                         <h1>Каре</h1>
                     </div>
                     <div class="content">
-                        <h3>Леса карелии</h3>
+                        <h3>Леса Карелии</h3>
                         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. </p>
+                        <p>Леса Карелии славятся своей красотой, богатством ресурсов и уникальной природой, которая привлекает туристов со всего
+                        мира.</p>
                             
                         <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
@@ -124,16 +125,16 @@
             </div>
 
             <div class="slide">
-                <img src="bottom/japan.jpg" alt="">
+                <img src="bottom/ural.jpg" alt="">
                 <div class="left-info">
                     <div class="penetrate-blur">
                         <h1>Ура</h1>
                     </div>
                     <div class="content">
-                        <h3>Водопады краснодарского края</h3>
+                        <h3>Леса Урала</h3>
                         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. </p>
+                        <p>Леса Урала поражают своим разнообразием и красотой, благодаря чему являются популярным местом для туристов и любителей
+                        природы. </p>
                             
                         <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
@@ -148,16 +149,16 @@
             </div>
 
             <div class="slide">
-                <img src="bottom/africa.jpg" alt="">
+                <img src="bottom/taiga.jpg" alt="">
                 <div class="left-info">
                     <div class="penetrate-blur">
                         <h1>Тай</h1>
                     </div>
                     <div class="content">
-                        <h3>Водопады краснодарского края</h3>
+                        <h3>Леса Тайги</h3>
                         
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. </p>
+                        <p>Леса тайги раскинулись на огромных территориях, предоставляя дом для множества видов животных и растений и обеспечивая
+                        важные экосистемные услуги, такие как регулирование климата и очистка воздуха. </p>
                             
                         <button class="btn" onclick=playVideo()>Больше деталей</button>
                     </div>
@@ -183,6 +184,7 @@
             </div>
             <div class="video">
                 <video src="forestMp4.mp4" muted loop autoplay></video>
+                <p class="description"></p>
             </div>
     </section>
 

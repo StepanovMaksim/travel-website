@@ -16,6 +16,22 @@
     color: #007b62;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #18aaaa;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+
 @media (min-aspect-ratio: 2/9) and (max-aspect-ratio: 6/9) {
 
     header {
@@ -64,6 +80,10 @@
         font-size: 100px;
     }
 
+    .description {
+        font-size: 4vw;
+    }
+
 }
 
 @media (min-aspect-ratio: 6/9) and (max-aspect-ratio: 1) {
@@ -78,6 +98,7 @@
         justify-content: flex-start;
         align-items: center;
         z-index: 100;
+        
     }
     
     .parallax {
@@ -118,6 +139,10 @@
 
     .right-info h1 {
         font-size: 150px;
+    }
+
+    .description {
+        font-size: 3vw;
     }
 
 }
@@ -177,6 +202,10 @@
         font-size: 150px;
     }
 
+    .description {
+        font-size: 3vw;
+    }
+
 }
 
 @media (min-aspect-ratio: 10/7) and (max-aspect-ratio: 10/4.5) {
@@ -234,6 +263,11 @@
     .right-info h1 {
         font-size: 250px;
     }
+
+    .description {
+        font-size: 2vw;
+    }
+
 }
 
 
@@ -269,6 +303,10 @@
 
     .right-info h1 {
         font-size: 250px;
+    }
+
+    .description {
+        font-size: 2vw;
     }
 
 }
@@ -387,7 +425,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 100;
+
 }
 
 .slide img {
@@ -397,7 +435,7 @@
     object-fit: cover;
     pointer-events: none;
     opacity: 0;
-    transition: .3s ease;
+    z-index: 100;
 }
 
 .slide.active img {
@@ -428,6 +466,12 @@ video {
     transform: translateX(0);
     z-index: 198;
     transition: .5s ease;
+}
+
+.slide.active1 .left-info {
+    transform: translateX(-100%);
+    z-index: 198;
+    transition: .8s ease;
 }
 
 .left-info .penetrate-blur {
@@ -472,6 +516,7 @@ video {
 .content p {
     font-size: 16px;
     margin: 10px 0 15px;
+    text-shadow: #444 1px 1px;
 }
 
 .btn {
@@ -485,7 +530,8 @@ video {
     color: #444;
     text-decoration: none;
     font-weight: 600;
-    transition: .5s;
+    transition: .3s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -509,7 +555,12 @@ video {
     transform: translateX(0);
     z-index: 198;
     transition: .5s ease;
+}
 
+.slide.active1 .right-info {
+    transform: translateX(100%);
+    z-index: 198;
+    transition: .8s ease;
 }
 
 .right-info h1 {
@@ -589,4 +640,21 @@ video {
 
 .navigation span:nth-child(1):hover i {
     color: #444;
+}
+
+
+.description {
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    right: 10vw;
+    text-align: justify;
+    z-index: 99;
+    color: white;
+    margin: 10px 0 15px;
+    text-shadow: #444 1px 1px;
+    text-shadow:
+    1px 1px rgb(2, 89, 3),
+    -1px -1px rgb(2, 89, 3);
+    color: #fdfdfd;
 }
