@@ -88,17 +88,8 @@ body::-webkit-scrollbar-track {
 
 @media (min-aspect-ratio: 6/9) and (max-aspect-ratio: 1) {
 
-    header {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 10px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        z-index: 100;
-        
+     header {
+        display: none;
     }
     
     .parallax {
